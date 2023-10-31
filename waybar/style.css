@@ -1,0 +1,63 @@
+@import "mocha.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "Cartograph CF", "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 10pt;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(24, 24, 24, 0.4);
+    color: @text;
+}
+
+
+tooltip {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+tooltip label {
+  color: rgb(155, 155, 155);
+}
+
+
+#workspaces button {
+    padding: 0px 8px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: rgb(155, 155, 155);
+}
+
+#workspaces button.active {
+    background: rgb(0,241,156);
+background: linear-gradient(94deg, rgba(0,241,156,1) 16%, rgba(113,232,143,1) 53%);
+    padding: 0px 10px;
+}
+
+#workspaces button.active label{
+    color: #181818;
+    font-weight: bolder;
+}
+
+#tray {
+    background-color: rgba(24, 24, 24, 0.5);
+}
+
+#pulseaudio, #window, #custom-pacman, #custom-sep, #backlight, #clock, #tray, #upower {
+    padding: 3px 6px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+#custom-power {
+    color: @red;
+}
+
+#upower {
+    color: @green;
+}
+
